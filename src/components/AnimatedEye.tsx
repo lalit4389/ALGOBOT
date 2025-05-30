@@ -17,7 +17,7 @@ const AnimatedEye = () => {
           playsInline
           className="w-full max-w-[300px] md:max-w-[400px] drop-shadow-[0_0_25px_rgba(8,232,222,0.3)]"
         >
-          <source src="/video_eye.mp4" type="video/mp4" />
+          <source src="./assests/original-c6f867f003d0615678ac3f8cc96e3396.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </motion.div>
