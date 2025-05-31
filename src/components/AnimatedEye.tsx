@@ -1,15 +1,12 @@
 import { motion } from 'framer-motion';
+import videoFile from '../assests/original-c6f867f003d0615678ac3f8cc96e3396.mp4';
+
 
 const AnimatedEye = () => {
   return (
     <div className="relative algo-eye">
       {/* Animated Video */}
-      <motion.div
-        className="relative z-10"
-        initial={{ opacity: 0, scale: 0.9 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 1 }}
-      >
+      
         <video
           autoPlay
           muted
@@ -17,10 +14,10 @@ const AnimatedEye = () => {
           playsInline
           className="w-full max-w-[300px] md:max-w-[400px] drop-shadow-[0_0_25px_rgba(8,232,222,0.3)]"
         >
-          <source src="./assests/original-c6f867f003d0615678ac3f8cc96e3396.mp4" type="video/mp4" />
+          <source src={videoFile} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
-      </motion.div>
+      
 
       {/* Orbiting Ring 1 */}
       <motion.div 
